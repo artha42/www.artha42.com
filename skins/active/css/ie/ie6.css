@@ -1,0 +1,20 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Target specific elements for PNG fix */
+#logo a, div#subpage_body_container, #search-holder a, #search-holder input, #splash_area_blurb img, a.slider-nav img, .sidebar_box, img.grid-icons, li.middle img { behavior: url(scripts/iepngfix.htc) }
+
+/* Remove splash area lighting effect (PNG Issue) */
+div#splash_area, body.frontpage div#splash_area { background-image: none; }
+
+/* Fix header area  */
+div#header { overflow: hidden; }
+div#header ul#navigation li { float: left}
+div#header ul#navigation li a { display: inline; }
+
+/* Fix subpage two column layout rendering issues */
+div#subpage_body_container { width: 960px;}
+
+/* Adjust frontpage boxes */
+ul#frontpage_boxes li{ height: 175px; }
+ul#frontpage_boxes li.left div.titlebox{ margin-left: 1px;}

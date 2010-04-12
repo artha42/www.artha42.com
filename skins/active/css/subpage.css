@@ -1,0 +1,204 @@
+@charset "utf-8";
+/* CSS Document */
+
+/***************************
+Radial Interactive Theme
+
+File: /skins/active/css/subpage.css
+Author: thecitizen
+Website: http://www.webcitizenmag.com
+****************************/
+
+/***************************
+Subpage Layout
+****************************/
+
+/* Feed special background repeat to subppages only */
+body.subpage div#body_wrapper { background-image: url(../images/background/subpage_body_bg_repeat.jpg); background-repeat: repeat-x	; }
+
+div#subpage_title { display: block; height: 51px; padding-left: 230px; line-height: 51px; }
+
+/* Adjust padding for "wide" version of subpage template */
+body.wide div#subpage_title {padding-left: 40px; }
+
+/* Adjust position for splash area for "wide" version of subpage template */
+body.wide div#splash_area { background-position: -125px top; }
+
+body.wide div#subpage_body_container { background-image: none; }
+
+div#subpage_title h2 { font-size: 25px; } 
+div#subpage_title h2 a { color: white; text-decoration: none; } 
+div#subpage_title h2 a:hover { text-decoration: underline; } 
+
+div#subpage_body_container { background-image: url(../images/left_column/left_column_bg-flat.png); background-repeat: no-repeat;}
+
+/* Make the splash area smaller on all subpages */
+body.subpage div#splash_area { height: 51px; }
+
+/***************************
+Left Column
+****************************/
+
+div#left_column { float: left; width: 190px; margin-top: 10px; }
+div#left_column ul#left_navigation {}
+div#left_column ul#left_navigation li { width: 190px; font-weight: bold; font-size: 11px; text-align: right; }
+div#left_column ul#left_navigation li#current a { background-image: url(../images/left_column/list_bg_current-flat.png); }
+div#left_column ul#left_navigation li a:hover  { background-image: url(../images/left_column/list_bg_hover-flat.png); }
+div#left_column ul#left_navigation li a{ padding: 1.2em 10px; display: block; text-decoration: none; color: #333; background-image: url(../images/left_column/list_bg-flat.png); background-repeat: no-repeat; background-position: left bottom; }
+
+/* "Second Level" List Styles */
+div#left_column ul#left_navigation li ul { padding: .3em 0px; }
+div#left_column ul#left_navigation li ul li { font-weight: normal; padding-bottom: .3em; }
+div#left_column ul#left_navigation li ul li a, div#left_column ul#left_navigation li#current ul li a{ background-image: none; padding: 0px 10px;}
+div#left_column ul#left_navigation li ul li a:hover { text-decoration: underline; color: #ff8000; }
+
+div#left_column div#below_nav_wrapper { padding: 15px 10px 10px 30px;}
+
+div#left_column div#contact_quickbox_title{ font-size: 10px; text-align: center; font-weight: bold; margin-bottom: 2px; color: #ff8000; }
+div#left_column div#contact_quickbox{ border: 1px solid white; text-align: center; background-image: url(../images/left_column/green_box_bg-flat.png); background-repeat: repeat-y; background-color: #619400; padding: 8px; margin-bottom: 8px; }
+div#left_column div#contact_quickbox a{ color: white;}
+
+
+div#left_column div#contact_quickbox span.phone {font-family: ComfortaaRegular, "Century Gothic",  Verdana, sans-serif; font-size: 22px; display:block; text-align: center; margin-bottom: 2px;color: white;}
+div#left_column div#contact_quickbox span.email {font-size: 10px; display:block; text-align: center; margin-bottom: 2px; color: white;}
+div#left_column div#contact_quickbox span.email a:hover { text-decoration: none;}
+div#left_column div#contact_quickbox span.contact-us {font-size: 9px; display:block; margin-top: 10px; text-align: right; font-weight: bold;}
+div#left_column div#contact_quickbox span.contact-us a{text-decoration: none;}
+div#left_column div#contact_quickbox span.contact-us a:hover{text-decoration: underline;}
+
+div#left_column div.sidebar_box { width: 150px; background-image: url(../images/left_column/sidebar_box_bg-flat.png); background-repeat: no-repeat; background-position: center top; }
+
+div#left_column div.sidebar_box_content {padding: 15px 15px 0px 15px; font-size: 10px;}
+div#left_column div.sidebar_box_content h5, div#left_column div.sidebar_box_content h5 a {color: #ff8000; font-weight: bold;}
+div#left_column div.sidebar_box div.titlebox{font-size: 11px; margin-left: 2px; color: white; font-weight: bold; width:147px; min-height: 28px; background-image: url(../images/left_column/sidebar_box_title-flat.png); background-repeat: no-repeat; background-position: center top; background-color: #ff8000; overflow: auto; }
+
+div#left_column div.sidebar_box div.titlebox span{ text-align: right; float: right; margin-top: 10px; margin-right: 10px; width: 75px; padding-bottom: 3px;}
+
+/***************************
+Content
+****************************/
+
+div#content_wrapper{ float: right; width: 770px; background-color: white; margin-top: 10px; }
+body.wide div#content_wrapper{ float: none; width: 100%; }
+div#content { padding: 20px 40px;}
+
+/***************************
+Services Page
+****************************/
+
+div#content div#grid_holder {margin: 25px 0px; background-image: url(../images/grid/grid_bg_repeat-flat.png); background-repeat: repeat-y; background-position: center top; }
+div#content div#grid_holder div.grid_row {}
+div#content div#grid_holder div.grid_cell {width: 323px; position: relative;}
+div#content div#grid_holder div.grid_cell img.grid-icons { position: absolute; top: 0; left: 0;}
+
+div#content div#grid_holder div.grid_cell h5 { background-color: white; background-image: url(../images/grid/grid_headers-flat.png); background-repeat: repeat-y; background-position: right top; font-size: 11px; font-weight: bold; padding: .75em; text-align: right; color: #333;}
+div#content div#grid_holder div.left {float: left;}
+div#content div#grid_holder div.right {float: right;}
+
+/***************************
+Our Work Page
+****************************/
+
+div#content div.our_work_featured { margin: 15px 0px 10px 0px;}
+div.our_work_featured div.img_holder { height: 215px; margin-bottom: 3px;}
+div.our_work_featured div.info { color: #ff8000; text-align: right; font-size: 11px; font-weight: bold;}
+div.our_work_featured div.info a{ color: #ff8000; text-decoration: none;}
+div.our_work_featured div.info a:hover {text-decoration: underline; }
+div.our_work_featured div.thumbnails { margin-top: 10px; margin-right: 10px; float: left; }
+div.our_work_featured div.thumbnails img {margin-right: 2px; }
+
+div.our_work_featured div#project_info_box {color: #ff8000; float: left; margin-top: 10px; font-size: 11px;}
+div.our_work_featured div#project_info_box a {color: #ff8000;}
+div.our_work_featured div#project_info_box span {color: #333; font-weight: bold;}
+
+div#content div.our-work-grid { margin-top: 10px;}
+div#content div.our-work-grid div.our-work-grid-row {margin-bottom: 20px; }
+div.our-work-grid div.our-work-grid-row div.our-work-entry {width: 220px; float: left; margin-left: 12px; }
+div.our-work-grid div.our-work-grid-row div.our-work-entry img {height: 115px; border: 1px solid #F0F6FA; }
+div.our-work-grid div.our-work-grid-row div.first {margin-left: 0px; }
+
+div.our-work-entry div.info { color: #ff8000; text-align: right; font-size: 10px; font-weight: bold;}
+div.our-work-entry div.info a{ text-decoration: none;}
+div.our-work-entry div.info a:hover {text-decoration: underline; }
+
+
+/***************************
+Blog Page
+****************************/
+
+div#content div#blog { margin-top: 1.5em; }
+
+div#content div#blog-column-left { width: 470px; float: left; }
+div#content div#blog-column-right {width: 190px; float:right; }
+
+div#content div.blog-entry { border-bottom: 1px solid #e6e6e6; margin-bottom: 2em; padding-bottom: 1em; }
+
+div#content div.blog-entry div.blog-entry-date { width: 4.5em; background-color: #F1F7FA; float: left; margin-right: 1em;}
+div#content div.blog-entry div.blog-entry-date span{ display: block; text-align: center; font-weight: bold; font-size: 10px;}
+div#content div.blog-entry div.blog-entry-date span.day {font-size: 18px;}
+div#content div.blog-entry div.blog-entry-date span.year {font-weight: normal;}
+
+div#content div.blog-entry div.blog-entry-title-holder {overflow: auto; }
+div#content div.blog-entry h2.blog-entry-title { font-size: 14px; font-weight: bold; font-family: Verdana, Arial, Helvetica, sans-serif; }
+div#content div.blog-entry h2.blog-entry-title a{text-decoration: none;}
+div#content div.blog-entry h2.blog-entry-title a:hover{text-decoration: underline;}
+
+div#content div.blog-entry span.blog-entry-meta {font-size: 11px; font-weight: normal; color: #ff8000;}
+div#content div.blog-entry span.blog-entry-meta a { color: #ff8000;}
+
+div#content div.blog-entry span.blog-entry-comments-num{font-weight: bold;}
+
+div#content div.blog-entry div.blog-entry-content {}
+
+div#content div.blog-sidebar-box {font-size: 11px; margin-bottom: 20px; }
+div#content div.blog-sidebar-box a { color: #ff8000;}
+div#content div.blog-sidebar-box ul li { padding-bottom: .25em; margin-left: 0px; list-style: none outside; }
+div#content div.blog-sidebar-box ul.line-separated li { padding-bottom: .5em; margin-bottom: .5em; border-bottom: 1px solid #F5F5F5; }
+div#content div.blog-sidebar-box  h4{ padding: .5em 0; color: #333; background-image: url(../images/blog/blog_sidebar_header-flat.png); background-repeat: repeat-y; background-position: left top; }
+div#content div.blog-sidebar-box-content {padding: .5em 0; }
+
+/***************************
+Contact Page
+****************************/
+
+div#content div.contact_info { position: relative; height:19em; width: 187px; background-color: #ff8000; float: left; margin-top: 20px; padding: 15px; color: white;}
+div#content div.contact_info div {position: relative; }
+div#content div.contact_info div.phone-email {padding-top: 11.5em;}
+
+
+div#content div.map_holder {margin-top: 25px; padding: 10px 0; width: 473px; background-color: blue; float: right; background-color: #EEF5F9; text-align: center;}
+div#content div.map_holder div#map iframe { border: 1px solid white;}
+
+div#content div#contact_form_holder {margin-top: 20px; overflow: auto; }
+div#content div#contact_form_holder h4 {border-bottom: 1px solid #e6e6e6; padding-bottom: .25em; margin-bottom: 10px;}
+
+div#content div#contact_form_holder form#contact-form { font-size: 11px; width: 385px; float: left; }
+
+form#contact-form label {display: block; font-size: 10px; color: #333; font-weight: bold; margin-bottom: 3px; }
+form#contact-form input.styled, form#contact-form textarea {width: 100%; }
+form#contact-form input.styled, form#contact-form textarea, form#contact-form select { margin-bottom: 8px; background-image: url(../images/contact/form_input_bg-flat.png); background-repeat: repeat-x; background-color: #eff6f9; border-left: 1px solid #809db9; border-top: 1px solid #809db9; padding: 3px; }
+
+form#contact-form input.styled:focus, form#contact-form select:focus, form#contact-form textarea:focus { border: 1px solid #ff8000; }
+
+form#contact-form input#submit-button { padding: 2px; margin-right: -6px; /* Compensates form element padding set above */ }
+
+div#content div#contact_form_holder div#form-extra { width: 275px; padding: 0px 0px 0px 20px; font-size: 11px; float: right; }
+
+/****************************
+Full Width
+****************************/
+
+div#content table.example_styles {width: 100%}
+div#content table.example_styles li {margin-left: 0;}
+
+/****************************
+Pagination Styles
+****************************/
+
+.pagination { margin:10px 0; text-align: right; font-size: 11px;}
+.pagination span.pages { color:#333; border:1px solid #EFF6F9; margin:1px; padding:2px 4px; background-color:#EFF6F9; background-image: url(../images/contact/form_input_bg-flat.png); background-repeat: repeat-x; }
+.pagination span.current { font-weight:bold; border:1px solid #EFF6F9; color:#333; background-color:#FFF; margin:1px; padding:2px 4px; }
+
+.pagination a,.pagination a:link,.pagination a:visited,.pagination a:active { text-decoration:none; border:1px solid #EFF6F9; color:#333; background-color:#EFF6F9; margin:1px; padding:2px 4px; background-image: url(../images/contact/form_input_bg-flat.png); background-repeat: repeat-x; font-weight: bold; }
+.pagination a:hover{ border:1px solid #ff8000;color:#333; }
+

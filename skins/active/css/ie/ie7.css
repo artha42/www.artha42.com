@@ -1,0 +1,6 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* IE7 Margin Adustment For Left Navigation Lists */
+div#left_column ul#left_navigation li { margin-top: -2px; }
+div#left_column ul#left_navigation li:first-child, div#left_column ul#left_navigation li ul li { margin: 0px;}

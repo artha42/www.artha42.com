@@ -1,0 +1,201 @@
+@charset "utf-8";
+/* CSS Document */
+
+/***************************
+Radial Interactive Theme
+
+File: /skins/active/css/general.css
+Author: thecitizen
+Website: http://www.webcitizenmag.com
+****************************/
+
+/***************************
+Table Of Contents
+
+- General
+- Layout
+- Header
+- Splash Area
+- Frontpage Specific
+- Footer
+
+****************************/
+
+/***************************
+General
+****************************/
+
+/* Text Formatting */
+a:link, a:visited, a:active { color: #60a7c9; text-decoration: underline; }
+a:hover { text-decoration: none; }
+
+p { margin: 1em 0; }
+
+/* Table Styles */
+table{ font-size: 11px; border-left: 1px solid #eff6f9; border-top: 1px solid #eff6f9; margin-top: 10px; margin-bottom: 10px; }
+table th { background-image:url(../images/contact/form_input_bg-flat.png); background-repeat: repeat-x; background-color: #eff6f9; background-position: left top; font-weight: bold; text-align: center; border-bottom: 1px solid #eff6f9;  }
+table th, table td { padding: 1em; border-right: 1px solid #eff6f9; border-bottom: 1px solid #eff6f9; }
+table td { text-align: center; }
+
+/* Headings */
+h2 {font-size: 20px; font-family: ComfortaaRegular, "Century Gothic",  Verdana, sans-serif; color: white; }
+h2.blue { color: #60a7c9; }
+h3 { font-size: 18px; background-color: #F0F6FA; color: #60a7c9; font-family: ComfortaaRegular, "Century Gothic",  Verdana, sans-serif; background-image: url(../images/content_boxes/content_heading_bg-flat.png); background-repeat: repeat-y; background-position: left; padding: .5em 0;}
+h4 { color: #60a7c9; font-weight: bold; font-size: 12px; }
+h5 {font-weight: bold; font-size: 12px; }
+h6 {font-weight: bold; font-size: 11px; }
+
+/* Lists [Content Div Only] */
+div#content ul { margin: 1em 0; }
+div#content ul li { list-style: disc inside; margin-left: 3em; }
+
+div#content ol { margin: 1em 0; }
+div#content ol li { list-style: decimal inside; margin-left: 3em; }
+
+/* Miscellaneous */
+.bold {font-weight: bold; }
+.italic {font-style: italic; }
+.clear {clear: both; margin: 0px; padding: 0px; height: 0px; }
+.align-right {text-align: right; }
+.align-left {text-align: left; }
+.align-center {text-align: center; }
+.float-left { float: left; }
+.float-right {float: right; }
+.center {margin-right: auto; margin-left: auto; }
+
+/* Quick Access To Theme Color */
+.theme-color { color: #ff8000; }
+
+/***************************
+Layout
+****************************/
+
+body { padding: 0px 0px 10px 0px;  text-align: center; background-color: #FFFFFF; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; line-height: 1.3; color: #333; }
+
+/* Feed special background repeat to frontpage only */
+body.frontpage{} div#body_wrapper{background-image: url(../images/background/body_bg_repeat.jpg); background-repeat: repeat-x;  }
+
+div#container { width: 960px; margin: 0px auto; text-align: left; }
+
+/***************************
+Header
+****************************/
+
+div#header_wrapper { background-image: url(../images/background/header_wrap_bg_repeat.jpg); background-repeat: repeat-x; background-position: bottom; }
+div#header { width: 960px; margin: 0px auto 1px auto; height: 50px;}
+
+div#header h1#logo { float: left;}
+div#header h1#logo a { display: block; height: 50px; width: 150px; background-image: url(../images/header/logo-flat.png); background-repeat: no-repeat; }
+div#header h1#logo a span{ display: none; /* Logo text replacement */ }
+
+div#header ul#navigation {float: right;}
+div#header ul#navigation li {float: left; color: #464646; margin-left: 15px; }
+div#header ul#navigation li a { display:block; height: 50px; line-height: 50px; color: #464646; font-weight: bold; text-decoration: none;  }
+div#header ul#navigation li a.emphasis { color: #60a7c9; }
+div#header ul#navigation li a:hover, div#header ul#navigation li#current-top-nav a  { background-image: url(../images/header/li_indicator-flat.png); background-repeat: no-repeat; background-position: center bottom; font-weight: bold;   }
+div#header ul#navigation li a:hover {color: #60a7c9;}
+
+
+/***************************
+Splash Area
+****************************/
+
+div#splash_area { width: 960px; height:259px; background-image: url(../images/background/splash_area_sub_bg-flat.png); background-repeat: no-repeat; margin: 0 auto; position: relative; background-position: left top; }
+
+/* Feed bigger splash area background to frontpage */
+body.frontpage div#splash_area { background-image: url(../images/background/splash_area_bg-flat.png); }
+
+div#splash_area div#search-holder { width: 306px; height: 32px; position: absolute; top: 0; right: 0; background-color: #FEA040; z-index: 9998;}
+
+div#splash_area div#search-holder ul#social-media-icons { padding-top: 6px; padding-left: 8px; overflow: auto; float: left; }
+div#splash_area div#search-holder ul#social-media-icons li { float: left;  padding-right: 7px;}
+div#splash_area div#search-holder ul#social-media-icons li a{ display: block; height: 20px; width: 20px; }
+div#splash_area div#search-holder ul#social-media-icons li#twitter a{ background-image: url(../images/header/twitter-icon-flat.png); background-repeat: no-repeat; }
+div#splash_area div#search-holder ul#social-media-icons li#rss a{ background-image: url(../images/header/rss-icon-flat.png); background-repeat: no-repeat; }
+div#splash_area div#search-holder ul#social-media-icons li#facebook a{ background-image: url(../images/header/facebook-icon-flat.png); background-repeat: no-repeat; }
+div#splash_area div#search-holder ul#social-media-icons li a span{ display: none; }
+
+div#splash_area div#search-holder form#site-search{width: 204px; margin-right: 10px; float: right; overflow: hidden; margin-top: 6px;}
+div#splash_area div#search-holder form#site-search input { width: 163px; height: 14px; padding-top: 3px; padding-left: 2px;  font-size: 9px; font-weight: bold; font-family: Verdana, Arial, Helvetica, sans-serif; float: left; }
+div#splash_area div#search-holder form#site-search input.site-search-submit {float: right; height: 20px; width: 32px; padding: 0px; }
+
+div#splash_area div#splash_area_blurb { position: absolute; height: 259px; width: 308px; top: 0px; right: 0px; }
+
+div#splash_area div#splash_area_blurb img {position: absolute;}
+div#splash_area div#splash_area_blurb img#blurb-text { top: 95px; left: 0px; }
+div#splash_area div#splash_area_blurb img#button {bottom: 19px; right: 0px;}
+
+div#splash_area div#slider_container { position: absolute; height: 225px; top: 16px;  width: 531px; }
+
+div#splash_area div#slider_container div.panel { width: 484px; height: 178px; position: absolute; display: none; font-size: 59px; font-weight: bold; border: 6px solid #EEF6F8; overflow: hidden;}
+
+div#splash_area a.slider-right, div#splash_area a.slider-left {position: absolute; display: block; height: 18px; overflow: hidden; width: 24px; right: -29px;}
+div#splash_area a:hover.slider-right img, div#splash_area a:hover.slider-left img {margin-top: -18px;}
+div#splash_area a.slider-right {bottom: 24px; }
+div#splash_area a.slider-left {bottom: 0px;}
+
+/***************************
+Frontpage Specific
+****************************/
+
+ul#frontpage_boxes { margin-top: 15px; overflow: auto; font-size: 11px;}
+ul#frontpage_boxes li{width: 311px; min-height: 175px; float: left; background-image: url(../images/frontpage_boxes/frontpage_boxes_bg-flat.png); background-repeat: no-repeat; background-position: center top; position: relative; padding-bottom: 45px;}
+ul#frontpage_boxes li div.content { padding: 30px 30px 0px 30px;}
+ul#frontpage_boxes li.left{}
+ul#frontpage_boxes li.middle{}
+ul#frontpage_boxes li.right{}
+
+ul#frontpage_boxes li div.testimonial-attr {color: #ff8000; font-weight: bold; }
+ul#frontpage_boxes li.left, ul#frontpage_boxes li.middle{ margin-right: 13px; }
+
+ul#frontpage_boxes li div.titlebox{ background-color: #ff8000; overflow: auto; font-size: 11px; color: white; text-align: right; font-weight: bold; width: 311px; min-height: 28px; background-image: url(../images/frontpage_boxes/left_right_title-flat.png); background-repeat: no-repeat; background-position: center top; position: absolute; bottom: 0px; left: 0px; }
+ul#frontpage_boxes li div.titlebox span{ width: 110px; text-align: right; float: right; margin-top: 10px; margin-right: 10px; display:block;padding-bottom: 3px; display: inline;}
+ul#frontpage_boxes li div.titlebox span a{ color: white; text-decoration: none;}
+ul#frontpage_boxes li div.titlebox span a:hover{ color: white; text-decoration: underline;}
+
+
+ul#frontpage_boxes li.middle div.titlebox{background-image: url(../images/frontpage_boxes/middle_title-flat.png); }
+ul#frontpage_boxes li.middle div.titlebox span{ margin-right: 16px; text-align: center;}
+
+ul#frontpage_boxes li.services-list{font-weight: bold;}
+ul#frontpage_boxes li.services-list a { display: block; color: #464646; text-decoration: none;}
+ul#frontpage_boxes li.services-list a:hover { color: #60a7c9;  }
+ul#frontpage_boxes li.services-list div.content-col{width: 50%;}
+ul#frontpage_boxes li.services-list div.col-right a { padding-left: 20px;}
+
+div#frontpage-left-content { float: left; width: 635px; margin-top: 13px; margin-right: 13px;}
+div#frontpage-contact-form { float: right; width: 310px;  margin-top: 13px; background-image: url(../images/frontpage_contact_form/contact_form_bg-flat.png); font-size: 11px; background-repeat: no-repeat; background-position: center top; }
+div#frontpage-contact-form form { padding: 15px 20px 20px 20px; }
+
+div#frontpage-contact-form input {width: 260px; padding: 3px; }
+div#frontpage-contact-form textarea { padding: 3px; width: 260px; height: 100px; overflow: auto; }
+div#frontpage-contact-form input.styled:focus, div#frontpage-contact-form select:focus, div#frontpage-contact-form textarea:focus { border: 1px solid #ff8000; }
+div#frontpage-contact-form input, div#frontpage-contact-form select, div#frontpage-contact-form textarea { margin-top: 3px; margin-bottom: 10px; }
+
+div#frontpage-contact-form form label {display: block; font-weight: bold;}
+
+div#frontpage-left-content ul#news-blog-entries { overflow: auto; font-size: 11px;  }
+div#frontpage-left-content ul#news-blog-entries li { width: 205px; float: left;}
+
+div#frontpage-left-content ul#news-blog-entries li.left, div#frontpage-left-content ul#news-blog-entries li.middle { border-right: 1px solid #e2e2c2; margin-right: 11px; padding-right: 8px; width: 195px;}
+
+div#frontpage-left-content ul#news-blog-entries li div.blog-entry-title{ color: #ff8000; font-weight: bold; margin-top: 1em;}
+div#frontpage-left-content ul#news-blog-entries li div.blog-entry-title a{ color: #ff8000; font-weight: bold; text-decoration: none;}
+div#frontpage-left-content ul#news-blog-entries li div.blog-entry-title a:hover{ text-decoration: underline;}
+
+body.frontpage h2.contact-us { margin-top: 13px; }
+
+/***************************
+Footer
+****************************/
+
+div#footer { background-image: url(../images/background/footer_bg-flat.png); background-repeat: repeat-y; background-color: #ff8000; margin-top: 15px; font-size: 11px; color: white;}
+
+div#footer ul#footer-nav { text-align: right; padding-top: 1em; padding-bottom: 1em; padding-right: 20px;}
+div#footer ul#footer-nav li { display: inline; }
+div#footer ul#footer-nav li a { color: white; }
+
+div#afterfooter { font-size: 11px; color: #ff8000; margin-top: 3px; overflow: auto; margin-right: 2px;}
+div#afterfooter a { color: #ff8000; }
+div#afterfooter div.left { float: left; width: 50%; }
+div#afterfooter div.right { float: right; text-align: right; width: 50%; }
