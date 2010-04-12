@@ -1,0 +1,7 @@
+h1. Building it
+
+This site is based on jekyll. Fork or clone the jekyll from my "fork":http://github.com/vagmi/jekyll. I have added support for the ERB templates and have a handy erb method as a helper in a similar fashion to sinatra. Did I tell you that I <3 sinatra? Don't bother with installing the gem and such. Just clone jekyll and add the bin to your path.
+
+
+
+
